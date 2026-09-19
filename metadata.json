@@ -1,0 +1,6 @@
+{
+  "name": "AUV-9 Subsea Robotics Website",
+  "description": "Engineering portal and 3D digital twin platform for the AUV-9 autonomous underwater vehicle featuring 3D-printed PLA torpedo fuselage, brushless DC propulsion, 200kHz PZT acoustic transceiver, and RoboVac SLAM bathymetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

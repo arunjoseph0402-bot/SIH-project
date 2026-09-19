@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  
+  --color-abyssal-base: #060709;
+  --color-abyssal-panel: #0d0e12;
+  --color-abyssal-border: #222328;
+  --color-abyssal-text: #e2e8f0;
+  --color-abyssal-muted: #94a3b8;
+  --color-abyssal-cyan: #00f0ff;
+  --color-abyssal-amber: #ffb95f;
+  --color-abyssal-green: #4edea3;
+  --color-abyssal-red: #ff6b6b;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+  body {
+    background-color: #060709;
+    color: #ffffff;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .bg-slam-grid {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  @keyframes radar-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .animate-radar {
+    animation: radar-spin 3s linear infinite;
+  }
+}
